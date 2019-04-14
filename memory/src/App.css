@@ -19,20 +19,12 @@
   color: white;
 }
 
+.App-Section {
+  display: flex;
+}
+
 .App-link {
   color: #61dafb;
-}
-
-.myLink {
-  color: #46a012;
-}
-
-.title {
-  color: #61dafb;
-}
-
-.list-vacations {
-  background-color: aquamarine;
 }
 
 @keyframes App-logo-spin {

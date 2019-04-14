@@ -1,0 +1,24 @@
+.bloc-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.bloc-container__section {
+    height: 300px;
+}
+
+.bloc-container__first-section {
+    background-color: rgb(70, 236, 236);
+}
+
+.bloc-container__second-section {
+    background-color: rgb(145, 165, 165);
+}
+
+.bloc-container__third-section {
+    background-color: rgb(92, 163, 50);
+}
+
+.bloc-container__fourth-section {
+    background-color: rgb(12, 44, 22);
+}
