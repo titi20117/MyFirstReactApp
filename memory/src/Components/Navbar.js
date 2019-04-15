@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles_Components/Navbar.css';
 
-let Navbar = ()=> {
+const Navbar = ()=> {
     return(<div className="list-vacations">
     <ul
       className="myLink"
