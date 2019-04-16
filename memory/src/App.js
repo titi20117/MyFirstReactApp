@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './Components/Navbar';
-import MainContent from './Components/MainContent';
+import Header from './Components/Header';
+import Section from './Components/Section';
 import Footer from './Components/Footer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="title">
-          <h1>Fernand Moudio</h1>
-        </div>
-        <div>
-          <p>i am a web fronted debelopper</p>
-        </div>
-        <div className="App-Section">
-          <Navbar />
-          <MainContent />
-        </div>
+        <Header />
+        <Section />
         <Footer />
       </div>
     );
