@@ -1,25 +1,17 @@
 import React from 'react';
 import '../Styles_Components/MainContent.css';
 import Joke from './Joke';
+import JokesData from './jokesData';
 
 
 let MainContent = ()=> {
+    const jokeComponents = JokesData.map(joke => {
+        return (    
+            <Joke key={joke.id} question={joke.question} punchLine={joke.punchLine}/>
+        );
+    });
     return(<div className="bloc-container">
-            <Joke 
-                list = {{number:1, question: "Ronaldo is playing in Porto?", punchLine: "you are stupid"}}
-            />
-            <Joke 
-                list = {{number:2, question: "Ronaldo is playing in Porto?", punchLine: "you are stupid"}}
-            />
-            <Joke 
-                list = {{number:3, question: "Ronaldo is playing in Porto?", punchLine: "you are stupid"}}
-            />
-            <Joke 
-                list = {{number:4, question: "Ronaldo is playing in Porto?", punchLine: "you are stupid"}}
-            />
-            <Joke 
-                list = {{number:5, question: "Ronaldo is playing in Porto?", punchLine: "you are stupid"}}
-            />
+            {jokeComponents}
             
             {/* <div className="bloc-container__section bloc-container__second-section">
                 
