@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles_Components/Section.css';
+import '../Styles_Components/Section.scss';
 import Joke from './Joke';
 import JokesData from './jokesData';
 
