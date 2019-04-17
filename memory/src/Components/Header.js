@@ -3,10 +3,9 @@ import '../Styles_Components/Header.css';
 import Description from './headers/description';
 import Data from './datas/headerData';
 
+console.log(Data[0].description);
 const Header = ()=> {
-    const ShopTitle = () => {
-      return (<Description shopTitle={Data.description}/>)
-    }
+    const ShopTitle = <Description shopTitle={Data[0].title.shopTitle}/>;
     return(<div className="header-container">
         {ShopTitle}
       <div className="header-container__title">
