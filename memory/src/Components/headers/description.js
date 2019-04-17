@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Description = (props) => {
-    return (<div><p>{props.shopTitle}</p></div>);
+    return (<div><span>{props.shopDescriptionTitle}</span></div>);
 }
 
 export default Description

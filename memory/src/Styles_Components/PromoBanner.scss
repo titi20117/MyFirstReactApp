@@ -1,0 +1,24 @@
+.banner-container {
+    display: flex;
+    height: 160px;
+    background-color: #26a0d7;
+    &__title {
+        font-size: 50px;
+        color: white;
+        font-weight: 900;
+        position: absolute;
+        top: 45px;
+        left: 160px;
+        font-family: Roboto;
+    }
+    &__notifications {
+        display: flex;
+        position: absolute;
+        right: 250px;
+        top: 64px;
+        margin-left: 10px;
+        &__time {
+            margin-left: 10px;
+        }
+    }
+}
