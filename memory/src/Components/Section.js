@@ -1,10 +1,9 @@
 import React from 'react';
-import '../Styles_Components/MainContent.css';
+import '../Styles_Components/Section.css';
 import Joke from './Joke';
 import JokesData from './jokesData';
 
-
-let MainContent = ()=> {
+const MainContent = ()=> {
     const jokeComponents = JokesData.map(joke => {
         return (    
             <Joke key={joke.id} question={joke.question} punchLine={joke.punchLine}/>
