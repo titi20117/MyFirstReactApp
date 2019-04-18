@@ -1,28 +1,53 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../Styles_Components/MainContent.css';
 import Joke from './Joke';
 import JokesData from './jokesData';
 
+class MainContent extends Component {
+    constructor() {
+        super()
+        this.state = {
+            todos: JokesData
+        }
+        this.handleChange = this.handleChange.bind(this);
+    }
 
-let MainContent = ()=> {
-    const jokeComponents = JokesData.map(joke => {
-        return (    
-            <Joke key={joke.id} question={joke.question} punchLine={joke.punchLine}/>
-        );
-    });
-    return(<div className="bloc-container">
+    handleChange = (id) => {
+        this.setState(prevState => {
+            const updatedTodos = prevState.todos.map(todo => {
+                if(todo.id === id) {
+                    todo.completed = !todo.completed;
+                }
+                return todo;
+            })
+            return{
+
+                todos: updatedTodos
+            }
+        })
+        console.log(this.state.todos.map((joke) => {
+            return (joke.question);
+        }));
+    }
+    jokeComponents = () => {
+       return (
+           this.state.todos.map((joke) => {
+              return (    
+                  <Joke key={joke.id} question={joke.question} punchLine={joke.punchLine} handleChange = {this.handleChange}/>
+              );
+          })
+       ) 
+    }
+    render () {
+        const jokeComponents = this.jokeComponents();
+        
+        return (
+            <div className="bloc-container">
             {jokeComponents}
-            
-            {/* <div className="bloc-container__section bloc-container__second-section">
-                
-            </div>
-            <div className="bloc-container__section bloc-container__third-section">
-                
-            </div>
-            <div className="bloc-container__section bloc-container__fourth-section">
-                
-            </div> */}
-        </div>);
+            <button onClick={this.handleChange}>click me</button>
+        </div>   
+        )
+    }
 }
 
 export default MainContent;
