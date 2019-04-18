@@ -1,7 +1,13 @@
 import React from 'react';
+class Description extends React.Component {
+    constructor() {
+        super()
+        this.state = {
 
-const Description = (props) => {
-    return (<div><span>{props.shopDescriptionTitle}</span></div>);
+        }
+    }
+    render() {
+        return (<div><span>{this.props.shopDescriptionTitle}</span></div>)
+    }
 }
-
 export default Description

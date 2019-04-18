@@ -3,18 +3,29 @@ import Info from './banner/infoBanner';
 import Data from './datas/bannerData';
 import '../Styles_Components/PromoBanner.scss';
 
-const Banner = ()=> {
-    const ShopTitle = <Info shopTitle={Data[0].title.shopTitle}/>;
-    return(
-    <div className="banner-container">
-        {ShopTitle}
-        <div className="banner-container__notifications">
-            <div className="banner-container__notifications__time"><span>0</span><span>days</span></div>
-            <div className="banner-container__notifications__time"><span>0</span><span>hours</span></div>
-            <div className="banner-container__notifications__time"><span>0</span><span>minutes</span></div>
-            <div className="banner-container__notifications__time"><span>0</span><span>seconds</span></div>
+class Banner extends React.Component {
+    render() {
+        const ShopTitle = <Info shopTitle={Data[0].title.shopTitle}/>;
+        return(
+        <div className="banner-container">
+            {ShopTitle}
+            <div className="banner-container__notifications">
+                <div className="banner-container__notifications__time">
+                <span className="banner-container__notifications__time__number">0</span>
+                <span className="banner-container__notifications__time__period">days</span></div>
+                <div className="banner-container__notifications__time">
+                <span className="banner-container__notifications__time__number">0</span>
+                <span className="banner-container__notifications__time__period">hours</span></div>
+                <div className="banner-container__notifications__time">
+                <span className="banner-container__notifications__time__number">0</span>
+                <span className="banner-container__notifications__time__period">minutes</span></div>
+                <div className="banner-container__notifications__time">
+                <span className="banner-container__notifications__time__number">0</span>
+                <span className="banner-container__notifications__time__period">seconds</span></div>
+            </div>
         </div>
-    </div>);
+        )
+    }
 }
 
 export default Banner

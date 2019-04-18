@@ -11,8 +11,8 @@ class App extends Component {
       <div className="App">
         <Banner />
         <Header />
-        {/* <Section />
-        <Footer /> */}
+        <Section />
+        <Footer />
       </div>
     );
   }
