@@ -11,16 +11,16 @@ class Banner extends React.Component {
             {ShopTitle}
             <div className="banner-container__notifications">
                 <div className="banner-container__notifications__time">
-                <span className="banner-container__notifications__time__number">0</span>
+                <div className="banner-container__notifications__time__number">0</div>
                 <span className="banner-container__notifications__time__period">days</span></div>
                 <div className="banner-container__notifications__time">
-                <span className="banner-container__notifications__time__number">0</span>
+                <div className="banner-container__notifications__time__number">0</div>
                 <span className="banner-container__notifications__time__period">hours</span></div>
                 <div className="banner-container__notifications__time">
-                <span className="banner-container__notifications__time__number">0</span>
+                <div className="banner-container__notifications__time__number">0</div>
                 <span className="banner-container__notifications__time__period">minutes</span></div>
                 <div className="banner-container__notifications__time">
-                <span className="banner-container__notifications__time__number">0</span>
+                <div className="banner-container__notifications__time__number">0</div>
                 <span className="banner-container__notifications__time__period">seconds</span></div>
             </div>
         </div>

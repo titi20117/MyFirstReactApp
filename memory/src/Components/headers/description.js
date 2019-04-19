@@ -7,7 +7,11 @@ class Description extends React.Component {
         }
     }
     render() {
-        return (<div><span>{this.props.shopDescriptionTitle}</span></div>)
+        return (
+        <div className="header-container__title">
+            <span className="header-container__title__secondTitle">{this.props.shopHeaderTitle}</span>
+            <span className="header-container__title__description">{this.props.shopSmallDescription}</span>
+        </div>)
     }
 }
 export default Description
