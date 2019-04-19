@@ -17,5 +17,20 @@
             font-size: 12px;
             letter-spacing: 1px;
         }
+        &__logoName {
+            border: 1px solid #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 43px;
+            position: absolute;
+            left: 100px;
+            top: 214px;
+            text-align: center;
+            padding-top: 10px;
+            background-color: #26a0d7;
+            color: #fff;
+            font-weight: 800;
+            font-size: 23px;
+        }
     }
 }
