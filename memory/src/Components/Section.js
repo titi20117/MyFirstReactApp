@@ -4,7 +4,7 @@ import '../Styles_Components/Section.scss';
 class MainContent extends React.Component {
     render() {
         return (
-            <div></div>
+            <div className="section"></div>
         )
     }
 }

@@ -1,5 +1,6 @@
 .header-container {
-    background: rgb(245, 223, 223);
+    display: flex;
+    background: #ffffff;
     height: 184px;
     &__title {
         &__secondTitle{
@@ -31,6 +32,27 @@
             color: #fff;
             font-weight: 800;
             font-size: 23px;
+        }
+    }
+    &__search-form {
+        position: absolute;
+        left: 440px;
+        top: 225px;
+        & .form-inline .form-control {
+            width: 500px;
+            outline: none !important;
+            &:focus {
+                border-color: inherit;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+        }
+        & .btn-primary {
+            background-color: #26a0d7;
+            color: #fff;
+            &:hover {
+                background-color: #000;
+            }
         }
     }
 }
