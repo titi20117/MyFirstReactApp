@@ -3,6 +3,7 @@ import '../Styles_Components/Header.scss';
 import Description from './headers/description';
 import Data from './datas/headerData';
 import Search from './headers/search';
+import Contact from './headers/contact';
 
 class Header extends React.Component {
   render() {
@@ -10,12 +11,14 @@ class Header extends React.Component {
           shopHeaderTitle={Data[0].title.shopDescriptionTitle}
           shopSmallDescription={Data[0].title.smallDescriptionTitle}
           />,
-          SearchItem = <Search />
+          SearchItem = <Search />,
+          ContactInfo = <Contact />
     ;
     return(
     <div className="header-container">
       {ShopHeaderTitle}
       {SearchItem}
+      {ContactInfo}
       <div className="header-container__authorisation"></div>
       <div className="header-container__information"></div>
     </div>)

@@ -21,8 +21,8 @@
         &__logoName {
             border: 1px solid #fff;
             border-radius: 50%;
-            width: 50px;
-            height: 43px;
+            width: 56px;
+            height: 56px;
             position: absolute;
             left: 100px;
             top: 214px;
@@ -54,5 +54,24 @@
                 background-color: #000;
             }
         }
+    }
+    &__contact {
+        position: absolute;
+        left: 80%;
+        top: 34%;
+        & span {
+            position: relative;
+            left: 10px;
+            bottom: 2px;
+            color: #292d39;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 1.5em;
+            font-family: ubuntu;
+        } 
+        & .fa-phone{
+           font-size: 40px;
+           color: #26a0d7;
+       }
     }
 }
