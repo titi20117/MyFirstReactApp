@@ -69,3 +69,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 course work the link below
 https://theme203-sport.myshopify.com/collections/all
+Version de font-Awesome 4.7
+Version de bootstrap 4
