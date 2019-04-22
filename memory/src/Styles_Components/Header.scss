@@ -1,77 +1,106 @@
-.header-container {
-    display: flex;
+.header {
     background: #ffffff;
     height: 184px;
-    &__title {
-        &__secondTitle{
-            position:absolute;
-            top: 202px;
-            left: 160px;
-            font-size: 40px;
-            font-weight: 600;
-            letter-spacing: 1px;
+    &-container {
+        height: 184px;
+        &__title {
+            width: 25%;
         }
-        &__description{
-            position:absolute;
-            top: 250px;
-            left: 160px;
-            font-size: 12px;
-            letter-spacing: 1px;
-        }
-        &__logoName {
-            border: 1px solid #fff;
-            border-radius: 50%;
-            width: 56px;
-            height: 56px;
-            position: absolute;
-            left: 100px;
-            top: 214px;
-            text-align: center;
-            padding-top: 10px;
-            background-color: #26a0d7;
-            color: #fff;
-            font-weight: 800;
-            font-size: 23px;
-        }
-    }
-    &__search-form {
-        position: absolute;
-        left: 440px;
-        top: 225px;
-        & .form-inline .form-control {
-            width: 500px;
-            outline: none !important;
-            &:focus {
-                border-color: inherit;
-                -webkit-box-shadow: none;
-                box-shadow: none;
+        &__search-form {
+            width: 50%;
+            padding: 18px 15px 0 15px;
+            & form {
+                height: 35px;
+                padding: 0 80px 0 0;
+            }
+            & .form-inline .form-control {
+                width: 100%;
+                float: left;
+                height: 35px;
+                &:focus {
+                    border-color: inherit;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+            & .btn-primary {
+                height: 35px;
+                margin: 0 -83px 0 0;
+                background-color: #26a0d7;
+                color: #fff;
+                &:hover {
+                    background-color: #000;
+                }
             }
         }
-        & .btn-primary {
-            background-color: #26a0d7;
-            color: #fff;
-            &:hover {
-                background-color: #000;
+        &__contact {
+            padding: 18px 15px 0 15px;
+            text-align: right;
+            width: 25%;
+            & span {
+                margin-right: 10px;
+                color: #292d39;
+                font-size: 21px;
+                font-weight: 500;
+                line-height: 1.5em;
+                font-family: Segoe UI;
+            } 
+            & .fa-phone{
+               font-size: 40px;
+               color: #26a0d7;
+           }
+        }
+        &__social{
+            padding: 20px 0 0 0;
+            &__currency {
+                float: right;
+                position: relative;
+                bottom: 6px;
+            }
+            & .form-group {
+                margin: 0;
+                & .form-control {
+                    padding: 0;
+                    border: none;
+                    font-size: 12px;
+                    outline: transparent;
+                    & option {
+                        padding: 0;
+                    }
+                }
+            }
+            &__user {
+                float: right;
+                margin: 0 15px 0 0;
+                padding: 0 15px 0 0;
+                border-right: 1px solid rgba(0,0,0,.15);
+                font-size: 0;
+                & li {
+                    display: inline-block;
+                    font-size: 12px;
+                    & ~ li {
+                        margin: 0 0 0 15px;
+                    }
+                }
+            }
+            &__social-network {
+                float: right;
+                margin: 0 15px 0 0;
+                padding: 0 15px 0 0;
+                border-right: 1px solid rgba(0,0,0,.15);
+                font-size: 0;
+                & li {
+                    display: inline-block;
+                    font-size: 12px;
+                    & ~ li {
+                        margin: 0 0 0 15px;
+                    }
+                    & a {
+                        color: #26a0d7;
+                        text-decoration: none;
+                    }
+                }   
             }
         }
-    }
-    &__contact {
-        position: absolute;
-        left: 80%;
-        top: 34%;
-        & span {
-            position: relative;
-            left: 10px;
-            bottom: 2px;
-            color: #292d39;
-            font-size: 21px;
-            font-weight: 500;
-            line-height: 1.5em;
-            font-family: ubuntu;
-        } 
-        & .fa-phone{
-           font-size: 40px;
-           color: #26a0d7;
-       }
     }
 }
