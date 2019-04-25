@@ -5,13 +5,17 @@ import Data from './datas/headerData';
 import Search from './headers/search';
 import Contact from './headers/contact';
 import Social from './headers/social';
+import Navigation from './headers/navigation';
+import Panier from './headers/panier';
 
 class Header extends React.Component {
   render() {
     const SocialHeader = <Social />,
           ShopHeaderTitle = <Description />,
           SearchItem = <Search />,
-          ContactInfo = <Contact />
+          ContactInfo = <Contact />,
+          NavigationHeader = <Navigation />,
+          PanierHeader = <Panier />
     ;
     return(
     <div className="header">
@@ -22,8 +26,12 @@ class Header extends React.Component {
           {SearchItem}
           {ContactInfo}
         </div>
-        <div className="header-container__authorisation"></div>
-        <div className="header-container__information"></div>
+        <div className="col-sm-9 col-sm-offset-3">
+          <div className="header-container__navigation">
+            {NavigationHeader}
+            {PanierHeader}
+          </div>
+        </div>
       </div>
     </div>  
     )
