@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Banner from './Components/PromoBanner';
 import Header from './Components/Header';
 import Section from './Components/Section';

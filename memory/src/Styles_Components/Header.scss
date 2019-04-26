@@ -102,5 +102,22 @@
                 }   
             }
         }
+        &__navigation {
+            height: 60px;
+            background: #292d39;
+            position: relative;
+            z-index: 100;
+            -webkit-border-radius: 5px 10px 0 0;
+            border-radius: 5px 10px 0 0;
+            &__items {
+                &__el {
+                    float: left;
+                    margin: 0 0 0 20px;
+                    & a:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
     }
 }
