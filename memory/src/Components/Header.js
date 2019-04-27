@@ -26,10 +26,12 @@ class Header extends React.Component {
           {SearchItem}
           {ContactInfo}
         </div>
-        <div className="col-sm-9 offset-md-3">
-          <div className="header-container__navigation">
-            {NavigationHeader}
-            {PanierHeader}
+        <div className="row navigation">
+          <div className="header-container__nav">
+            <div className="header-container__navigation">
+              {NavigationHeader}
+              {PanierHeader}
+            </div>
           </div>
         </div>
       </div>

@@ -1,8 +1,6 @@
 .header {
     background: #ffffff;
-    height: 184px;
     &-container {
-        height: 184px;
         &__title {
             width: 25%;
         }
@@ -102,6 +100,12 @@
                 }   
             }
         }
+        &__nav {
+            width: 100%;
+            max-width: 75%;
+            margin: 0 0 0 25%;
+            padding: 0 15px;
+        }
         &__navigation {
             height: 60px;
             background: #292d39;
@@ -110,14 +114,120 @@
             -webkit-border-radius: 5px 10px 0 0;
             border-radius: 5px 10px 0 0;
             &__items {
-                &__el {
+                & > li {
                     float: left;
                     margin: 0 0 0 20px;
-                    & a:hover {
+                    color: #fff;
+                    & ~ li {
+                        margin: 0 0 0 10px;
                         color: #fff;
+                    }
+                }
+                &__list {
+                    & a {
+                        height: 60px;
+                        display: block;
+                        padding: 0 15px;
+                        font-size: 16px;
+                        line-height: 60px;
+                        color: #ffffff;
+                        position: relative;
+                        &:hover {
+                            color: #26a0d7;
+                        }
+                        &:active {
+                            color: #26a0d7;
+                        }
+                    }
+                }
+                &__el {
+                    & a {
+                        height: 60px;
+                        display: block;
+                        padding: 0 15px;
+                        font-size: 16px;
+                        line-height: 60px;
+                        color: #ffffff;
+                        position: relative;
+                        &:active {
+                            color: #26a0d7;
+                        }                        
+                        &::after {
+                            content: '\f107';
+                            margin: 0 0 0 5px;
+                            font: 14px 'FontAwesome';
+                        }
+                        &:hover {
+                            color: #26a0d7;
+                            &::after {
+                                content: '\f106';
+                            }
+                        }
+                    }
+                    &__badge {
+                        width: 100%;
+                        display: block;
+                        vertical-align: top;
+                        font-size: 0;
+                        text-align: center;
+                        position: absolute;
+                        left: 0;
+                        top: -13px;
+                        & span {
+                            height: 20px;
+                            display: inline-block;
+                            vertical-align: top;
+                            padding: 0 5px;
+                            background: #26a0d7;
+                            font-size: 11px;
+                            line-height: 20px;
+                            color: #ffffff;
+                            text-transform: capitalize;
+                            position: relative;
+                            &:after {
+                                 content: '';
+                                 width: 8px;
+                                 height: 8px;
+                                 display: block;
+                                 margin: 0 0 0 -4px;
+                                 border: 4px solid transparent;
+                                 border-top-color: #26a0d7;
+                                 position: absolute;
+                                 left: 50%;
+                                 bottom: -8px;
+                             }
+                        }   
+                    }
+                }
+            }
+            &__panier {
+                float: right;
+                & a {
+                    height: 60px;
+                    display: block;
+                    padding: 0 20px;
+                    background: #26a0d7;
+                    font-size: 14px;
+                    line-height: 59px;
+                    color: #ffffff;
+                    position: relative;
+                    -webkit-border-radius: 0 5px 0 0;
+                    border-radius: 0 5px 0 0;
+                    & i {
+                        vertical-align: top;
+                        margin: 0 12px 0 0;
+                        font-size: 30px;
+                        line-height: 57px;
+                    }
+                    & span {
+                        margin: 0 4px;
                     }
                 }
             }
         }
     }
+}
+
+.navigation {
+    padding: 20px 0 0 0;
 }
