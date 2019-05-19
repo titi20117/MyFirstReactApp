@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles_Components/Header.scss';
 import Description from './headers/description';
-import Data from './datas/headerData';
+// import Data from './datas/headerData';
 import Search from './headers/search';
 import Contact from './headers/contact';
 import Social from './headers/social';

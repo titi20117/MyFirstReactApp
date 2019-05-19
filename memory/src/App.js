@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 import Banner from './Components/PromoBanner';
 import Header from './Components/Header';
-import Section from './Components/Section';
+import MainContent from './Components/Section';
 import Footer from './Components/Footer';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <Banner />
         <Header />
-        <Section />
+        <MainContent />
         <Footer />
       </div>
     );
