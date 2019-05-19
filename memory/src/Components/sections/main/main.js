@@ -5,7 +5,7 @@ class Main extends React.Component {
     render() {
         return(
             <div className="section__container__row__main">
-                fsdfdsfsf
+                
             </div>
         )
     }
