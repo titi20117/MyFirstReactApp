@@ -1,4 +1,46 @@
 .section__container__row__sidebar {
     width: 25%;
-    background-color: #074e11
+    &__collection {
+        margin: -60px 0 0 0;
+        &__title {
+            height: 60px;
+            padding: 0 20px;
+            background: #26a0d7;
+            font-size: 19px;
+            line-height: 60px;
+            color: #ffffff;
+            -webkit-border-radius: 5px 5px 0 0;
+            border-radius: 5px 5px 0 0;
+            &::before {
+                content: '\f0c9';
+                margin: 0 10px 0 0;
+                font: 21px 'FontAwesome';
+            }
+        }
+        &__content {
+            &__list {
+                margin: 0;
+                & li ~ li a {
+                    border-top: 1px solid rgba(0,0,0,.1);
+                }
+                & li a {
+                    display: block;
+                    padding: 12px 20px;
+                    background: #ffffff;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 1.2em;
+                    color: #292d39;
+                    &::after {
+                        content: '\f105';
+                        vertical-align: middle;
+                        float: right;
+                        margin: 0 0 0 7px;
+                        font: 14px/1.2em 'FontAwesome';
+                        opacity: .3;    
+                    }
+                }
+            }
+        }
+    }
 }

@@ -6,15 +6,8 @@ class Collection extends React.Component {
     constructor(){
         super();
         this.state=({
-            title: ""
+            title: "Collection",
         });
-        this.setTitle();
-    }
-
-    setTitle() {
-        this.setState({
-            title: "Collection"
-        })
     }
 
     render() {
