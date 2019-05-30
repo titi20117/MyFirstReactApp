@@ -1,4 +1,29 @@
 .section__container__row__main {
     width: 75%;
-    background-color: #254655
+    background-color: #f3f3f3;
+}
+
+.products {
+    &__heading {
+        margin: 20px 15px;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 12px;
+        font-size: 12px;
+        height: 50px;
+        padding: 17px 17px 17px 38px;
+    }
+    &__main {
+        margin:0 15px;
+        &__item {
+            width: 33%;
+            height: 245px;
+            background-color: #fff;
+            &__wrapper {
+                &__img {
+
+                }
+            }
+        }
+    }
 }

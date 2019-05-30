@@ -1,3 +1,4 @@
+//Компонент кот позволить отображать товар
 import React from 'react';
 import '../../../Styles_Components/Section/main.scss';
 
@@ -30,7 +31,7 @@ class Main extends React.Component {
                                 <div className="products__main__item__wrapper__info__description">
                                     <span>Кеды мужские Nike Vapor elastic</span>
                                 </div>
-                                <div className="products__main__item__wrapper__info__link">
+                                <div className="row products__main__item__wrapper__info__link">
                                     <form method="post" action="/cart/add">
                                         <input type="hidden" name="id" value="4792929668"/>
                                         <button className="btn btn-cart" type="submit">
