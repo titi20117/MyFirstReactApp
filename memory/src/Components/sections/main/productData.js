@@ -4,24 +4,24 @@ import '../../../Styles_Components/Section/main.scss';
 class ProductsData extends React.Component {
     render() {
         return(
-            <div className="products__main">
-                {this.props.arrayProducts.map(row =>
+            <div className="row products__main">
+                {this.props.arrayProducts.map(item =>
                     <div className="products__main__item">
                         <div className="products__main__item__wrapper">
                             <div className="products__main__item__wrapper__img">
                                 <a className="img-Change" href="/">
-                                    <img src={row.src} alt="item"/>
+                                    <img src={item.src} alt="item"/>
                                 </a>
                             </div>
                             <div className="products__main__item__wrapper__info">
                                 <div className="products__main__item__wrapper__info__price">
-                                    <span>{row.price}</span>
+                                    <span><b>Цена :</b> {item.price} РУб</span>
                                 </div>
                                 <div className="products__main__item__wrapper__info__name">
-                                    <span>{row.brand}</span>
+                                    <span><b>Бранд :</b> {item.brand}</span>
                                 </div>
                                 <div className="products__main__item__wrapper__info__description">
-                                    <span>{row.description}</span>
+                                    <span>{item.description}</span>
                                 </div>
                                 <div className="row products__main__item__wrapper__info__link">
                                     <form method="post" action="/cart/add">
