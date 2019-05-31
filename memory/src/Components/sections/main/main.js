@@ -1,24 +1,40 @@
 //Компонент кот позволить отображать товар
 import React from 'react';
 import '../../../Styles_Components/Section/main.scss';
+import ProductsData from './productData';
+// import '../productsImages/';
 
 class Main extends React.Component {
     constructor(){
         super();
         this.state=({
-            title: "Collection",
+            db: []
         });
+        this.showProducts();
+    }
+    showProducts(){
+        fetch("http://localhost/backend_Shop/api/")
+        .then((response)=>response.json())
+        .then((responseJson)=>
+        {
+            this.setState({
+                db: responseJson
+            });
+            console.log(this.state.db);
+        })
     }
     render() {
         return(
             <div className="section__container__row__main products">
+                {/* <ProductsData arrayProducts={this.state.db} /> */}
                 <h2 className="products__heading">Products</h2>
                 <div className="products__main">
+                    <ProductsData arrayProducts={this.state.db} />
                     <div className="products__main__item">
                         <div className="products__main__item__wrapper">
                             <div className="products__main__item__wrapper__img">
                                 <a className="img-Change" href="/">
-                                    <img src="ssss" alt="item"/>
+                                    <img src="http://localhost:3000/../productsImages/adidas1.jpg" alt="item"/>
                                 </a>
                             </div>
                             <div className="products__main__item__wrapper__info">
