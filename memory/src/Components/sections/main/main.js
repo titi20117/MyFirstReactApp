@@ -2,7 +2,6 @@
 import React from 'react';
 import '../../../Styles_Components/Section/main.scss';
 import ProductsData from './productData';
-// import productsImages from '../productsImages/adidas-porsche-design-athletic.jpg';
 
 class Main extends React.Component {
     constructor(){

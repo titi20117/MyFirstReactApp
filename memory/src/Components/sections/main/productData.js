@@ -18,10 +18,13 @@ class ProductsData extends React.Component {
                                     <span><b>Цена :</b> {item.price} РУб</span>
                                 </div>
                                 <div className="products__main__item__wrapper__info__name">
-                                    <span><b>Бранд :</b> {item.brand}</span>
+                                    <span><b>Производитель :</b> {item.brand}</span>
+                                </div>
+                                <div className="products__main__item__wrapper__info__size">
+                                    <span><b>Размер :</b> {item.size}</span>
                                 </div>
                                 <div className="products__main__item__wrapper__info__description">
-                                    <span>{item.description}</span>
+                                    <span><b>Описание : </b>{item.description}</span>
                                 </div>
                                 <div className="row products__main__item__wrapper__info__link">
                                     <form method="post" action="/cart/add">
